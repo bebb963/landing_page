@@ -1,0 +1,227 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html body{
+    height: auto;
+    font-family: 'Saira Extra Condensed', sans-serif;
+}
+
+@media only screen and (min-width: 770px) {
+
+    .menubar{
+        width: 15%;
+        height: 100%;
+        position: fixed;
+        background-color: #0B2448;
+    }
+    
+    .menubar-pos{
+        margin-top: 20%;
+        position: absolute;
+    }
+    
+    .img-menubar{
+        text-align: center;
+    }
+    
+    .img-menubar img{
+        width: 85%;
+        max-width: 100%;
+        border-radius: 50%;
+        border: 10px solid #144281;
+    }   
+    
+    .menu{
+        margin: 20px;
+        text-align: center;
+    }
+    
+    .menu .submenu{
+        color: white;
+        opacity: 0.4;
+        font-size: 19px;
+        text-decoration: none;
+        display:block;
+        margin-bottom: 20px;
+    }
+    
+    .menu .selected{
+        opacity: 1;
+    }
+    
+    .parent{
+        display: flex;
+    }
+    
+    .container{
+        position: absolute;
+        left: 15%;
+        width: 85%;
+        height: auto;
+        overflow-y: auto;
+    }
+
+    .descricaoinicio{
+        padding: 0 3%;
+        height: 100vh;
+        display:block;
+    }
+
+    .descricao{
+        padding: 0 3%;
+        height: 100vh;
+        display:block;
+        background-color: white;
+    }
+
+    .alinha{
+        position: relative;
+        top: 50%;
+        transform:translateY(-50%);
+    }
+
+    .botao{
+        top: 50%;
+        left: 42.5%;
+        color: white;
+        background-color: #0B2448;
+        border-radius: 5px;
+        padding: 10px 20px 10px 20px;
+        font-size: 30px;
+    }
+
+    .bgvideo{
+        height: 100vh;
+        width: 100vw;
+        object-fit: cover;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: -1;
+    }
+    
+    .icons-socialmedia{
+        color: white;
+        padding-left: 5px;
+        margin-top: 40%;
+    }
+    
+    .agendamento{
+        justify-content: center;
+        text-align: center;
+        border: 5px white;
+    }
+}
+
+@media only screen and (max-width: 769px){
+
+    .menubar{
+        width: 100%;
+        height: 15%;
+        position: fixed;
+        background-color: #0B2448;
+    }
+
+    .menubar-pos{
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        top: 50%;
+    }
+
+    .menu{
+        display: block;
+    }
+    
+    .img-menubar{
+        position: left;
+        width: 10%;
+    }
+    
+    .img-menubar img{
+        width: 100%;
+        border-radius: 50%;
+        border: 5px solid #144281;
+    }
+    
+    .menu .submenu{
+        width: 15%;
+        position: relative;
+        color: white;
+        opacity: 0.4;
+        font-size: 19px;
+        text-decoration: none;
+        width: 15%;
+        border-radius: 50%;
+        border: 5px solid #144281;
+    }
+    
+    .menu .selected{
+        opacity: 1;
+    }
+    
+    .parent{
+        display: flex;
+    }
+    
+    .container{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        overflow-y: auto;
+        padding: 0 3%;
+    }
+    
+    .descricao{
+        height: 100vh;
+        display: flex;
+    }
+    
+    .alinha{
+        position: relative;
+        top: 50%;
+        transform:translateY(-50%);
+    }
+    
+    .alinha_quemsomos{
+        position: relative;
+        top: 50%;
+        transform:translateY(-50%);
+    }
+    
+    .botao{
+        position: relative;
+        top: 50%;
+        left: 42.5%;
+        color: white;
+        background-color: #0B2448;
+        border: 10px #0B2448;
+        border-radius: 2px;
+        
+    }
+    
+    .bgvideo{
+        object-fit: cover;
+        position: absolute;
+        z-index: -100;
+        overflow: hidden;
+        width: 100%;
+        left: 0;
+        opacity: 0.5;
+    }
+    
+    .icons-socialmedia{
+        color: white;
+        padding-left: 5px;
+    }
+    
+    .agendamento{
+        justify-content: center;
+        text-align: center;
+        border: 5px white;
+    }
+}
+
